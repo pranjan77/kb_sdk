@@ -3,8 +3,11 @@ https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
 ```
 
    { ## KBaseNetworks.Network
-     id:
-     name:
+     id: 'id of network'                                                                # e.g. "kb|net.0"
+     name:'name of network'                                                             # e.g. "kb|netdataset.plant.cc.15: buildNetwork"
+     properties: {"Other_properties_of_network"}                                        # e.g. {} 
+     user_annotations: {"user annotations"}                                             # e.g. {}
+
      edges: [
               { id: 'Unique identifier of edge'                                         # e.g. "kb|g.3907.nds.10.edge.0"
                 name:       'Name of edge'                                              # e.g. "Member of cluster"              
@@ -38,7 +41,5 @@ https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
                    taxons: ["A list of NCBI taxonomy ids related to data"]              # e.g. ["kb|g.3907"]
                   }
                ]
-     properties: {"Other_properties_of_network"}                                        # e.g. {} 
-     user_annotations: {"user annotations"}                                             # e.g. {}
 
 ```
