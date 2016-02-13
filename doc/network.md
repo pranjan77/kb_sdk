@@ -1,6 +1,6 @@
 ### <A NAME="network"></A>Network
 https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
-
+```
 
    { ## KBaseNetworks.Network
      id:
@@ -41,3 +41,4 @@ https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
      properties: {"Other_properties_of_network"}                                        # e.g. {} 
      user_annotations: {"user annotations"}                                             # e.g. {}
 
+```
