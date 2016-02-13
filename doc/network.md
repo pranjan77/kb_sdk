@@ -1,7 +1,6 @@
 ### <A NAME="network"></A>Network
 https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
 
-```
 
    { ## KBaseNetworks.Network
      id:
@@ -15,8 +14,8 @@ https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
                 confidence: 'Probability between 0 and 1 that interaction is true'      # e.g. 0
                 strength:   'Value between 0 and 1 representing strength of interaction'# e.g. 0.8
                 dataset_id: 'identifier of dataset that provided the edge information'  # e.g. "kb|g.3907.nds.10"
-                properties: {"other_edge_property":1}                                   # e.g. {"color":"red"}
-                user_annotations:{"user_annotation_1":1}                                # e.g. {"annotation":1}
+                properties: {"other_edge_property":1}                                   # e.g. {}
+                user_annotations:{"user_annotation_1":1}                                # e.g. {}
               }
             ]
      nodes: [
@@ -30,15 +29,15 @@ https://narrative.kbase.us/functional-site/#/spec/type/KBaseNetworks.Network
               }
             ]
      datasets: [
-                 { id:
-                   name:
-                   description:
-                   network_type:
-                   source_ref:
-                   taxons:
-                   properties:
-                 }
+                 { description: "description"                                           # e.g. "Coexpression Cluster for Populus"
+                   id : "id of dataset"                                                 # e.g. "kb|g.3907.nds.10",
+                   name: "name of dataset"                                              # e.g. "Coexpression Cluster - Populus",
+                   network_type: "Type of network generated from a given dataset"       # e.g. "FUNCTIONAL_ASSOCIATION"
+                   properties: {"Other_properties":1}                                   # e.g. {}
+                   source_ref: "Reference to a dataset source"                          # e.g."GEO"
+                   taxons: ["A list of NCBI taxonomy ids related to data"]              # e.g. ["kb|g.3907"]
+                  }
                ]
-     properties:
-     user_annotations:
+     properties: {"Other_properties_of_network"}                                        # e.g. {} 
+     user_annotations: {"user annotations"}                                             # e.g. {}
 
